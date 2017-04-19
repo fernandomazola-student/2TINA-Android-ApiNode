@@ -11,6 +11,9 @@ app.get('/dados', function(req, res){
 	});
 });
 
+app.get('/outra-rota', function(req,res){
+	res.send("<b>Hello World</b>");
+});
 
 app.listen(3000, function(){
 	console.log("Api rodando na porta 3000");
